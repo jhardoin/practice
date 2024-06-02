@@ -34,7 +34,19 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px); /* account for the height of the clock hands */
+    transform: translateY(-3px); 
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; 
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1; 
   }
   
   .hand {
@@ -51,7 +63,6 @@ html {
     z-index: 2;
   }
   
-  /* Styling for the hour numbers */
   .number {
     position: absolute;
     width: 2rem;
@@ -62,8 +73,8 @@ html {
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    top: calc(50% - 1rem); /* Adjusted to center vertically */
-    left: calc(50% - 1rem); /* Adjusted to center horizontally */
+    top: calc(50% - 1rem); 
+    left: calc(50% - 1rem); 
     transform-origin: center center;
   }
   
@@ -80,14 +91,3 @@ html {
   .number11 { transform: rotate(240deg) translate(12.8rem) rotate(-240deg); }
   .number12 { transform: rotate(270deg) translate(12.8rem) rotate(-270deg); }
   
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%; /* Adjust the size of the logo */
-    height: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 1; /* Ensure logo is above other elements */
-  }
